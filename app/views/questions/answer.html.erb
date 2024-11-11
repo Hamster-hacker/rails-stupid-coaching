@@ -1,0 +1,20 @@
+<div class="card mb-4 shadow-sm m-3">
+  <div class="card-body">
+    <!-- Displaying the question -->
+    <h5 class="card-title text-primary">Your Question:</h5>
+    <p class="card-text"><%= @question %></p>
+    <p class="text-muted"><i>- You</i></p>
+
+    <hr>
+
+    <!-- Displaying the coach's answer -->
+    <h5 class="card-title text-success">Coach's Answer:</h5>
+    <p class="card-text"><%= @answer %></p>
+    <p class="text-muted"><i>- Your coach</i></p>
+  </div>
+</div>
+
+<!-- Button to ask another question -->
+<div class="text-left m-3">
+  <%= link_to "Ask another question", ask_path, class: "btn btn-primary mt-3" %>
+</div>
